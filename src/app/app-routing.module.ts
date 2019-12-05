@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { MainSearchComponent } from './mainSearch/mainSearch.component';
 
 const routes: Routes = [{
-  path:'gallery' ,component : GalleryComponent
+  path: 'gallery', component: GalleryComponent
 },
 {
-  path:'image/:id' ,component : ImageDetailComponent
+  path: 'main-search', component: MainSearchComponent
 },
 {
-  path:'' , redirectTo : '/gallery' , pathMatch :'full'
+  path: '', redirectTo: '/main-search', pathMatch: 'full'
 }];
 
 @NgModule({

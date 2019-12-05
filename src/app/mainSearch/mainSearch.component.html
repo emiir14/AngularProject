@@ -1,2 +1,8 @@
-<input class="searchInput" type="search" placeholder="Search here" #searchEle (keyup)="search(searchEle)" aria-label="Search">
+<div class="container">
+  <input class="searchInput" type="search" placeholder="Search here" #searchEle (keyup)="search(searchEle)"
+    aria-label="Search">
 
+  <div *ngIf="inputDirty">
+    <app-gallery></app-gallery>
+  </div>
+</div>
